@@ -99,6 +99,25 @@ body {
   display: none;
 }
 
+.brands {
+  background: #E6C744;
+  margin-top: 40px;
+}
+
+.brands-wrapper {
+  padding: 10px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(1, minmax(250px, 1fr));
+  grid-template-rows: repeat(6, 1fr);
+  place-items: center;
+  gap: 20px;
+}
+
+.align-top {
+  margin-top: -15px;
+}
+
 
 @media (min-width: 760px) {
   .navbar {
@@ -139,6 +158,16 @@ body {
     filter: brightness(1.4);
     background: rgba(0, 0, 0, 0.7);
   } 
+
+  .brands-wrapper {
+    padding: 10px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    place-items: center;
+    gap: 20px;
+  }
 }
 
 @media (min-width: 920px) {
@@ -200,5 +229,14 @@ body {
     display: flex;
     align-items: flex-end;
     object-fit: contain;
+  }
+
+  .brands-wrapper {
+    max-width: 1200px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr;
+    height: 150px;
+    align-items: center;
+    gap: 0;
   }
 }
