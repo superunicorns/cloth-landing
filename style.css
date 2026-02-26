@@ -261,6 +261,40 @@ body {
   background: rgba(0, 0, 0, 0.7);
 } 
 
+.young {
+  padding: 60px 20px;
+}
+
+.young-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.young-wrapper h3 {
+  font-size: 22px;
+  font-weight: 900;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.young__cards {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.young__card-1 {
+  width: 100%;
+  background: red;
+}
+
+.young__card-2 {
+  width: 100%;
+  background: blue;
+}
+
 @media (min-width: 760px) {
   .navbar {
     padding: 20px 40px;
@@ -479,5 +513,28 @@ body {
     font-size: 56px;
     font-weight: 900;
     width: 300px;
+  }
+
+  .young-wrapper h3 {
+    font-size: 28px;
+    font-weight: 900;
+    margin-bottom: 40px;
+    text-align: left;
+  }
+
+  .young__cards {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+  }
+  
+  .young__card-1 {
+    width: 50%;
+    background: red;
+  }
+  
+  .young__card-2 {
+    width: 50%;
+    background: blue;
   }
 }
