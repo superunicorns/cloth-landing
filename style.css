@@ -398,7 +398,13 @@ body {
   text-align: left;
   border-radius: 6px;
   width: max-content;
+  transition: all 0.3s ease; 
 }
+
+.download__btn:hover {
+  filter: brightness(1.4);
+  background: rgba(0, 0, 0, 0.7);
+} 
 
 .download__btn-image {
   width: 36px;
